@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="common.css">
+    <link media="(min-width:500px)" rel="stylesheet" href="desktop.css"><!--media query CSS媒体查询-->
+    <link media="(max-width:500px)" rel="stylesheet" href="mobile.css"><!--media query CSS媒体查询-->
+    <title>Document</title>
+    <style>
+        #checkbox:checked ~ p{ /* ~ 为兄弟选择器*/
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <label for="checkbox"></label>
+    <input id="checkbox" type="checkbox">
+    <p>AAA</p>
+</body>
+</html>
